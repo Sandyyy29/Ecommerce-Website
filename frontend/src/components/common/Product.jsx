@@ -12,6 +12,8 @@ import ProductImgOne from '../../assets/images/mens/five.jpg';
 import ProductImgTwo from '../../assets/images/mens/six.jpg';
 import ProductImgThree from '../../assets/images/mens/seven.jpg';
 import { Rating } from 'react-simple-star-rating'
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 
 const Product = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -31,7 +33,7 @@ const Product = () => {
                         </nav>
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row mb-5'>
                     <div className='col-md-5'>
                         <div className='row'>
                             <div className='col-2'>
@@ -147,13 +149,39 @@ const Product = () => {
                         <strong> Select Size:</strong>
                     <div className='sizes pt-2'>
                         
-                        <button className='btn btn-size ms-1'>S</button>
+                        <button className='btn btn-size '>S</button>
                           <button className='btn btn-size ms-1'>M</button>
                             <button className='btn btn-size ms-1'>L</button>
                               <button className='btn btn-size ms-1'>XL</button>
 </div>
                     </div>
                 </div>
+                <div className='add-to-cart my-4'>
+                    <button className='btn btn-primary text-uppercase '>Add To Cart</button>
+                </div>
+               <h2/>
+               <div>
+                <strong>SKU:</strong>
+                DDXX223
+               </div>
+            </div>
+            <div className='row pb-5'>
+                <div className='col-md-12'>
+                    <Tabs
+                    defaultActiveKey="profile"
+                    id="uncontrolled-tab-example"
+                    className="mb-3"
+                    >
+                    <Tab eventKey="home" title="Home">
+                        Tab Content for Description
+                    </Tab>
+                    <Tab eventKey="profile" title="Reviews(10)">
+                        Review Area
+                    </Tab>
+                 
+                    </Tabs>
+                    </div>
+
             </div>
             </div>
 
